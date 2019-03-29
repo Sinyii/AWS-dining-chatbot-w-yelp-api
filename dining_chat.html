@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+  <!--
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
+  -->
+  <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+  <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+  <script type="text/javascript" src="apigClient.js"></script>
+
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+  <script src="assets/js/script.js"></script> 
+
+  <body>
+    <div class="title-box">
+      <h1>Dining chatbot</h1>
+      
+      <!--
+        <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username">
+      </div>
+
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password">
+      </div>
+      <input type="button" class="btn" value="Sign in">
+-->
+    <div class='chatbox'>
+          <div id='chatborder'>
+            <p id="chatlog7" class="chatlog" style="color:deepskyblue;">&nbsp;</p>
+            <p id="chatlog6" class="chatlog" style="color:deepskyblue;">&nbsp;</p>
+            <p id="chatlog5" class="chatlog" style="color:deepskyblue;">&nbsp;</p>
+            <p id="chatlog4" class="chatlog" style="color:deepskyblue;">&nbsp;</p>
+            <p id="chatlog3" class="chatlog" style="color:deepskyblue;">&nbsp;</p>
+            <p id="chatlog2" class="chatlog" style="color:deepskyblue;">&nbsp;</p>
+            <p id="chatlog1" class="chatlog" style="color:deepskyblue;">&nbsp;</p>
+            <i class="far fa-comment-alt"></i>
+            <input type="text" name="chat" id="chatbox" placeholder="Say hi to Pops!" onfocus="placeHolder()">
+        </div>
+     </div>
+   </div>
+  </body>
+</html>
