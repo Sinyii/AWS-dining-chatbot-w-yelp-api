@@ -11,14 +11,14 @@ var token_response = "";
 var settings = {
     "async": false,
     "crossDomain": true,
-    "url": "https://dining-chat-bot2.auth.us-east-1.amazoncognito.com/oauth2/token",
+    "url": "https://YOUR_DOMAIN.auth.us-east-1.amazoncognito.com/oauth2/token",
     "method": "POST",
     "headers": {
         "content-type": "application/x-www-form-urlencoded"
     },
     "data": {
         "grant_type": "authorization_code",
-        "client_id": "7a56fi10nj9q599klq7tjog785",
+        "client_id": "",
         "redirect_uri": "https://dkqtjjobwip8d.cloudfront.net/dining_chat.html",
         "code": auth_code
     }
@@ -40,9 +40,9 @@ function firstStep() {
   console.log(token_response)
 
   AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-      IdentityPoolId: 'us-east-1:fcd0bf82-1c46-4688-ad3f-b6ab1042b79e',
+      IdentityPoolId: '',
       // format: https://cognito-idp.{region}.amazonaws.com/{userPoolId}.
-      Logins: {'cognito-idp.us-east-1.amazonaws.com/us-east-1_bOgr8xUxx': token_response_id_token}
+      Logins: {'cognito-idp.us-east-1.amazonaws.com/us-east-????????': token_response_id_token}
   });
 }
 
@@ -68,7 +68,7 @@ function thirdStep() {
           sessionToken: sessionToken
       })
       sdk = apigClientFactory.newClient({
-        apiKey: "XrraaWp4Rv50KJz8Ri4St2CgrMQzlPX5Afb53Tcd",
+        apiKey: "",
         accessKey: AWS.config.credentials.accessKeyId,
         secretKey: AWS.config.credentials.secretAccessKey,
         sessionToken: AWS.config.credentials.sessionToken
